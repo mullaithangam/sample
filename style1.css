@@ -1,0 +1,11 @@
+.disp{
+    visibility: hidden;
+    width: 20px;
+    height: 40px;
+    background-color: aqua;
+}
+img{
+    width: 100px;
+    height: 100px;
+    float: none;
+}
