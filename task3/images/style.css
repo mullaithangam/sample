@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: 'Red Hat Display';
+    background-image: url(pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.card {
+    width: 375px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card-header img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: block;
+}
+
+.card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-body h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card-body p {
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 36%, 96%);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.plan :hover{
+    color: green;
+}
+
+}
+.plan img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.plan-details h2 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.plan-details p {
+    color: hsl(228, 29%, 55%);
+    margin: 0;
+    font-size: 16px;
+}
+
+.plan a {
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+.payment-btn:hover {
+    background-color: rgb(208, 41, 69);
+    color: #fff;
+}
+
+.cancel-link {
+    color: hsl(224, 10%, 30%);
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    font-size: 0.9rem;
+}
+
+ .cancel-link:hover {
+    color: red;
+}
+
