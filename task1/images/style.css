@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+}
+body {
+    background-color: hsl(0,0%,95%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 300px;
+    padding: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.card .icon img {  
+    width: 80px;  
+    margin-bottom: 20px;  
+    opacity: 0.9;  
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-family: 'Big Shoulders';
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 1px;
+}
+
+.card p {
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card button {
+    background-color: hsl(0,0%,95%);
+    color: hsl(0, 4%, 14%);
+    border: 2px solid hsl(0, 1%, 13%);
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card button:hover {
+    background-color: hsla(0, 5%, 46%, 0.75);
+    color: inherit;
+}
+
+.card.sedan { background-color: hsl(31, 77%, 52%); }
+.card.suv { background-color: hsl(184, 100%, 22%);}
+.card.luxury { background-color: hsl(179, 100%, 13%); }
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .card-container{
+        flex-direction: row;
+        justify-content: center;
+        }
+    }
+
+@media (min-width: 1440px) {
+    .card-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
