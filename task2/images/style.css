@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+  background: linear-gradient(to bottom right, #2bbecb, #1bb1c4);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-card {
+  width: 350px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+.card-header {
+  background: url(bg-pattern-card.svg) no-repeat center center/cover;
+  height: 120px;
+}
+
+.photos {
+  margin-top: -50px;
+}
+
+.photos img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card-body h2 span {
+  color: #777;
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.card-body p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 20px;
+  font-size: 14px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats strong {
+  font-size: 18px;
+  display: block;
+  color: #333;
+}
+
+.stats span {
+  color: #999;
+ 
+}
